@@ -1,16 +1,14 @@
-# shinycake/scoop-bucket
+# This bucket is retired
 
-[Scoop](https://scoop.sh) bucket for [Quill](https://shinycake.github.io/quill/),
-an independent, unofficial Telegram client for Windows, macOS and Linux.
+Quill is no longer offered through Scoop. On Windows, install it with
+Chocolatey (`choco install quill`) or with the installer from
+https://shinycake.github.io/quill/.
+
+If you added this bucket, remove it with:
 
 ```powershell
-scoop bucket add shinycake https://github.com/shinycake/scoop-bucket
-scoop install shinycake/quill
+scoop uninstall quill
+scoop bucket rm shinycake
 ```
 
-`quill` on the command line is Quill's agent CLI (`quill agent ...`); the app
-itself is in the Start menu under Scoop Apps. A scheduled workflow follows
-[Quill's releases](https://github.com/shinycake/quill/releases), so
-`scoop update quill` picks up each one.
-
-Quill is not affiliated with, endorsed by, or sponsored by Telegram.
+Your Quill accounts and settings live in `%APPDATA%` and are not touched.
